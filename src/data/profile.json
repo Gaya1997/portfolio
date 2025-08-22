@@ -1,0 +1,213 @@
+{
+  "seo": {
+    "title": "Gayathri - Portfolio"
+  },
+  "heading": {
+    "id": "heading",
+    "name": "Gayathri Beena Sudheeshkumar",
+    "firstName": "Gayathri",
+    "lastName": "Beena Sudheeshkumar",
+    "intro": "Application Security professional with 5 years of experience securing critical systems and applications for leading government entities in the UAE.",
+    "titles": ["Offensive Cybersecurity Consultant"]
+  },
+  "contact": {
+    "id": "contact",
+    "email": "gayathribeenas@gmail.com",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/gayathrisudheesh-k-0a2466139"
+    }
+  },
+  "education": {
+    "id": "education",
+    "list": [
+      {
+        "degree": "MSc Cybersecurity & Penetration Testing",
+        "institution": "Middlesex University",
+        "start": "2024",
+        "isPresent": true,
+        "score": "Grade 1 on scale of 20",
+        "logo": "/images/logos/mdx-logo.png",
+        "courses": [
+          "Network Security & Mechanisms",
+          "Computer Networks & Internetworking",
+          "Security Solutions & Applications"
+        ]
+      },
+      {
+        "degree": "B.E (Hons) Computer Science",
+        "institution": "Birla Institute of Technology and Science, Pilani",
+        "start": "2015",
+        "end": "2019",
+        "score": "Distinction - 9.62 on scale of 10",
+        "logo": "/images/logos/bits-logo.png",
+        "courses": [
+          "Artificial Intelligence",
+          "Data Mining",
+          "Cryptography",
+          "Data Structures and Algorithms",
+          "Object Oriented Programming",
+          "Theory of Computation",
+          "Database System",
+          "Linguistics",
+          "Technical Report Writing",
+          "Ethics & Conduct of Business"
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "id": "experience",
+    "list": [
+      {
+        "title": "Offensive Cybersecurity Consultant",
+        "company": "Help AG, an e& enterprise company",
+        "start": "2020",
+        "isPresent": true,
+        "duration": "December 2020 - Present",
+        "location": "Dubai, UAE",
+        "logo": "/images/logos/HelpAG-logo.svg"
+      },
+      {
+        "title": "Software Developer: Digital Transformation",
+        "company": "Takaful Emarat Insurance (P.S.C)",
+        "start": "2020",
+        "duration": "March 2020 - November 2020",
+        "location": "Dubai, UAE",
+        "logo": "/images/logos/takaful-emarat-logo.png"
+      }
+    ]
+  },
+  "projects": {
+    "id": "projects",
+    "list": [
+      {
+        "name": "Help AG, an e& enterprise company",
+        "points": [
+          "Department of Economy & Tourism",
+          "General Directorate of Residency and Foreigners Affairs",
+          "Higher Colleges of Technology",
+          "Abu Dhabi National Oil Company"
+        ],
+        "image": "/images/logos/HelpAG-logo.svg"
+      },
+      {
+        "name": "Takaful Emarat Insurance PSC",
+        "description": "Software development of B2B and B2C portals (Angular & Dotnet)",
+        "image": "/images/logos/takaful-emarat-logo.png"
+      }
+    ]
+  },
+  "certifications": {
+    "id": "certifications",
+    "list": [
+      {
+        "name": "Burp Suite Certified Practitioner",
+        "issuer": "PortSwigger",
+        "logo": "/images/icons/portswigger.svg",
+        "verificationLink": "https://portswigger.net/web-security/e/c/88cbab220954d153"
+      },
+      {
+        "name": "API Penetration Testing",
+        "issuer": "APIsec University",
+        "logo": "/images/icons/apisec.png",
+        "verificationLink": "https://www.credly.com/badges/b21087f1-dc3a-4a2d-90c8-b6f2d0f3d677"
+      },
+      {
+        "name": "Certified Android Security Engineer",
+        "issuer": "8kSec",
+        "logo": "/images/icons/8ksec.png",
+        "verificationLink": "https://www.credly.com/badges/a77775e3-e446-401a-b2fc-1360460b3486/linked_in_profile"
+      },
+      {
+        "name": "Synopsys Software Integrity Group Sales Certification",
+        "issuer": "Synopsys Inc",
+        "logo": "/images/icons/synopsys.svg"
+      },
+      {
+        "name": "Synopsys Software Integrity Pre Sales Technical Certification",
+        "issuer": "Synopsys Inc",
+        "logo": "/images/icons/synopsys.svg"
+      },
+      {
+        "name": "Fortify SCA & SSC Certified Professional",
+        "issuer": "Micro Focus",
+        "logo": "/images/icons/microfocus.jpg",
+        "verificationLink": "https://www.credly.com/badges/3dbb118d-1650-42ac-8eae-c98325946eb0"
+      }
+    ]
+  },
+  "skills": {
+    "id": "skills",
+    "list": [
+      [
+        {
+          "name": "Web Security",
+          "icon": "/images/icons/websecurity.svg"
+        },
+        {
+          "name": "Burp Suite",
+          "icon": "/images/icons/burpsuite.svg"
+        }
+      ],
+      [
+        {
+          "name": "API Security",
+          "icon": "/images/icons/api-security.png"
+        },
+        {
+          "name": "Postman",
+          "icon": "/images/icons/postman.svg"
+        }
+      ],
+      [
+        {
+          "name": "Android Security",
+          "icon": "/images/icons/android-security.png"
+        },
+        {
+          "name": "Frida",
+          "icon": "/images/icons/frida.svg"
+        },
+        {
+          "name": "Genymotion",
+          "icon": "/images/icons/genymotion.svg"
+        },
+        {
+          "name": "MobSF",
+          "icon": "/images/icons/mobsf.png"
+        },
+        {
+          "name": "Oversecured",
+          "icon": "/images/icons/oversecured.svg"
+        }
+      ],
+      [
+        {
+          "name": "Static Application Security Testing",
+          "icon": "/images/icons/sast.png"
+        },
+        {
+          "name": "Black Duck (Synopsys)",
+          "icon": "/images/icons/blackduck.svg"
+        },
+        {
+          "name": "Fortify",
+          "icon": "/images/icons/opentext.svg"
+        }
+      ]
+    ]
+  },
+  "achievements": {
+    "id": "achievements",
+    "list": [
+      {
+        "title": "Hi5 Award Winner",
+        "date": "01/2023"
+      },
+      {
+        "title": "GISEC CTF Challenge",
+        "description": "Represented Department of Economy and Tourism and secured an impressive 4th position."
+      }
+    ]
+  }
+}

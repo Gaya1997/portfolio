@@ -1,0 +1,92 @@
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/mousewheel";
+
+:root {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--color-primary-foreground);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+  --clip-path-value-fullbleed: inset(0 -100vmax);
+  --tab-size-2: 2;
+  --tab-size-4: 4;
+  --tab-size-github: 8;
+  --breakpoint-3xl: 120rem;
+  --color-section-bg: #0000008e;
+  --color-primary-foreground: #d5e1f6;
+  --color-primary-foreground-60: #d5e1f6a3;
+  --color-secondary-foreground: #f7f7f7;
+  --color-tertiary-foreground: #c7c7c7;
+  --color-quaternary-foreground: #edc5f3;
+  --color-video-gradientBg1: #000000;
+  --color-video-gradientBg2: #090004;
+  --color-video-gradientBg3: #0d000d;
+  --color-video-gradientBg4: #0d001d;
+  --color-video-gradientBg5: #00021a;
+  --color-branding-mainBg1: #001433;
+  --color-branding-mainBg1-50: rgba(0, 20, 51, 0.5);
+  --color-branding-mainBg2: #140027;
+  --color-branding-mainBg2-80: rgba(20, 0, 39, 0.8);
+  --color-branding-mainBg3: #18001d;
+  --color-branding-mainBg3-60: #18001d9e;
+  --color-branding-mainBg3-80: rgba(24, 0, 29, 0.8);
+  --color-cardBg1: #18001d;
+  --color-cardBg1-60: #18001d9e;
+  --color-cardBg1Spotlight: rgba(247, 200, 255, 0.356);
+  --color-cardBg2: #00122d;
+  --color-cardBg2-60: #00122d9e;
+  --color-cardBg2Spotlight: rgba(138, 175, 229, 0.356);
+  --color-cardBg3: #121212;
+  --color-cardBg3-60: #1212129e;
+  --color-cardBorder3-65: #333333a8;
+  --color-cardBg3Spotlight: rgba(80, 80, 80, 0.356);
+  --color-scroll-gradient1: #b58cdc;
+  --color-scroll-gradient2: #8aade0;
+}
+
+@utility clip-path-* {
+  clip-path: --value(--clip-path-value- *);
+}
+
+html {
+  /* scroll-snap-type: y mandatory; */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  /* scroll-snap-align: start; */
+}
+
+body {
+  display: flex;
+}
+
+#root {
+  width: 100%;
+}
