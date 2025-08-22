@@ -9,6 +9,7 @@
     "dev": "vite",
     "prebuild": "node gen-index-html.js",
     "build": "tsc -b && vite build",
+    "postbuild": "echo \"www.gayathrisudheesh.me\" > dist/CNAME",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
