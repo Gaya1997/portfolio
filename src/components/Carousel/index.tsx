@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Swiper } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
 import { Mousewheel, Navigation } from "swiper/modules";
@@ -14,6 +14,10 @@ interface IProps extends Partial<SwiperProps> {
 
 const Carousel = ({ className, children, ...swiperProps }: IProps) => {
   const swiperRef = useRef<SwiperType>(null);
+  const [swiperState, setSwiperState] = useState({
+    isBeginning: true,
+    isEnd: false,
+  });
 
   const onSwiperInit = (swiper: SwiperType) => {
     swiperRef.current = swiper;
@@ -27,6 +31,10 @@ const Carousel = ({ className, children, ...swiperProps }: IProps) => {
     swiperRef.current?.slidePrev();
   };
 
+  const onSlideChange = (swiper: SwiperType) => {
+    setSwiperState({ isBeginning: swiper.isBeginning, isEnd: swiper.isEnd });
+  };
+
   return (
     <div className="w-full h-full flex flex-col">
       <div className="w-full flex gap-2 items-center">
@@ -34,6 +42,7 @@ const Carousel = ({ className, children, ...swiperProps }: IProps) => {
           variant="ghost"
           className="button-prev w-12 h-12 rounded-full p-2 hidden md:flex"
           aria-label="Previous Slide"
+          disabled={swiperState.isBeginning}
           onClick={onHandlePrev}
         >
           <IconWrapper className="rotate-180 flex items-center justify-center">
@@ -43,28 +52,8 @@ const Carousel = ({ className, children, ...swiperProps }: IProps) => {
         <Swiper
           className={className}
           onInit={onSwiperInit}
+          onSlideChange={onSlideChange}
           modules={[Mousewheel, Navigation]}
-          spaceBetween={10}
-          slidesPerView={1}
-          breakpoints={{
-            1024: {
-              slidesPerView: 2,
-            },
-            1800: {
-              slidesPerView: 3,
-            },
-          }}
-          // navigation={{
-          //   nextEl: ".button-next",
-          //   prevEl: ".button-prev",
-          // }}
-          // loop
-          // freeMode={{
-          //   enabled: true,
-          //   sticky: false,
-          //   momentumBounce: false,
-          // }}
-          // mousewheel
           {...swiperProps}
         >
           {children}
@@ -73,6 +62,7 @@ const Carousel = ({ className, children, ...swiperProps }: IProps) => {
           variant="ghost"
           className="button-next w-12 h-12 rounded-full p-2 hidden md:flex"
           aria-label="Next Slide"
+          disabled={swiperState.isEnd}
           onClick={onHandleNext}
         >
           <IconWrapper className=" flex items-center justify-center">
@@ -85,6 +75,7 @@ const Carousel = ({ className, children, ...swiperProps }: IProps) => {
           variant="ghost"
           className="button-prev w-10 h-10 rounded-full p-2"
           aria-label="Previous Slide"
+          disabled={swiperState.isBeginning}
           onClick={onHandlePrev}
         >
           <IconWrapper className="rotate-180 flex items-center justify-center">
@@ -95,6 +86,7 @@ const Carousel = ({ className, children, ...swiperProps }: IProps) => {
           variant="ghost"
           className="button-next w-10 h-10 rounded-full p-2"
           aria-label="Next Slide"
+          disabled={swiperState.isEnd}
           onClick={onHandleNext}
         >
           <IconWrapper className=" flex items-center justify-center">

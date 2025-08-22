@@ -15,7 +15,7 @@ const STYLE: Record<TButtonVariant, string> = {
 };
 
 const COMMON_STYLES =
-  "rounded-md cursor-pointer transition-all duration-300 font-semibold flex items-center justify-center gap-2";
+  "rounded-md cursor-pointer transition-all duration-300 font-semibold flex items-center justify-center gap-2 disabled:opacity-50 disabled:pointer-events-none";
 
 const DEFAULT_SIZE_STYLES: Record<string, string> = {
   sm: "text-sm px-3 py-1.5",
