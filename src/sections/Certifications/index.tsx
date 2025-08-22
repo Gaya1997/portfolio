@@ -37,12 +37,12 @@ const Certifications = ({ id, list, i18nKeys }: CertificationsProps) => {
           },
           1280: {
             slidesPerView: 4,
+            freeMode: {
+              enabled: true,
+              sticky: false,
+              momentumBounce: false,
+            },
           },
-        }}
-        freeMode={{
-          enabled: true,
-          sticky: false,
-          momentumBounce: false,
         }}
         mousewheel
       >
