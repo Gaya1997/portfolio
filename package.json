@@ -11,7 +11,7 @@
     "build": "tsc -b && vite build",
     "postbuild": "echo \"www.gayathrisudheesh.me\" > dist/CNAME",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "vite preview --port 3000 --host",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
